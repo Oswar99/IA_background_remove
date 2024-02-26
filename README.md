@@ -1,4 +1,4 @@
-# Proyecto de Remoción de Fondo de Imágenes
+# IA Background Remove (Angular)
 
 Este proyecto utiliza TensorFlow.js para la remoción de fondo de imágenes.
 
