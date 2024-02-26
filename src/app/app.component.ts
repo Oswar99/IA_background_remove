@@ -4,11 +4,12 @@ import { RouterOutlet } from '@angular/router';
 //import * as tfconv from '@tensorflow/tfjs-converter';
 //import * as bodyPix from '@tensorflow-models/body-pix';
 import * as bodySegmentation from '@tensorflow-models/body-segmentation';
+import { BackgroundRemoverComponent } from './background-remover/background-remover.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, BackgroundRemoverComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

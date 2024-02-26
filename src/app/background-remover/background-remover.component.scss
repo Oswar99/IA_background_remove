@@ -1,0 +1,85 @@
+.bg {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-width: 65vw;
+    min-height: 65vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.image-selected{
+  width: 100px;
+  object-fit:cover;
+}
+
+.custom-file-input {
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.custom-file-input input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-file-input label {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: #333;
+    cursor: pointer;
+}
+
+.custom-file-input label:hover {
+    background-color: #e0e0e0;
+}
+
+.custom-file-input.drag-over {
+    border-color: #999;
+}
+
+.custom-file-input.drag-over label {
+    background-color: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-file-input input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-file-input label {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+}
+
+.custom-file-input label:hover {
+  background-color: #e0e0e0;
+}

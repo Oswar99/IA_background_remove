@@ -1,0 +1,31 @@
+<div class="container rounded-lg bg mt-3">
+    <section *ngIf="showUploader" class="my-3">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Background Remover</h1>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <input class="custom-file-input" type="file" multiple="true" (change)="onFileSelected($event)" />
+            </div>
+        </div>
+    </section>
+    <section *ngIf="!showUploader && img_edited.length === 0">
+        <h3>Imagenes Seleccionadas</h3>
+        <hr />
+        <div class="row justify-content-center">
+            <img *ngFor="let image of img_original" class="image-selected" src={{image.src}} />
+        </div>
+        <button class="btn btn-primary mt-3" (click)="removeBackground()">Remover Fondo</button>
+    </section>
+
+    <section *ngIf="img_edited.length > 0">
+        <h3>Imagenes Seleccionadas</h3>
+        <hr />
+        <div class="row justify-content-center">
+            <img *ngFor="let image of img_edited" class="image-selected" src={{image}} />
+        </div>
+    </section>
+
+</div>
