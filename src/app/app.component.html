@@ -1,0 +1,6 @@
+<div>
+  <input type="file" (change)="onFileSelected($event)" />
+  <img ngIf="selectedImage" [src]="selectedImage" alt="Selected Image">
+</div>
+
+<router-outlet />
